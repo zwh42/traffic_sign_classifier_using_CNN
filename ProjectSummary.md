@@ -122,6 +122,10 @@ My final model results were:
 
 
 * LeNet architecture was chosen
+  * convolutional layer well suited for this problem because that this problem is related to real world image recongination, in which the convolutional networks exploit spatially local correlation by enforcing a local connectivity pattern, and can build up high level hierarchy to extract features for further classfication. 
+  * RELU activation layer is used to reduced likelihood of the gradient to vanish
+  * Pooling layer can reduce the number of parameters and computation in the network, and hence to also reduce the possibility of overfitting.
+  * dropout layer is not used because the training set size is comparely large, based on the network settings (and its number of paramenters), so the risk of overfitting is small that dropout may not be necessary.   
 * LeNet was a mature architecture with proved results. The strucutre is relatively simple and easy to understand, and the speed is fast enough. 
 * Only 30 epochs is used and with very few parameter tuning effort the accuracy is over 90%, which I think may not be the best but good enough due to the time constrain. 
 
